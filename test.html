@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="Filter.js"></script>
+</head>
+<body>
+
+<div class="parentNode">
+</div>
+<div id='showId'>
+</div>
+<script>
+
+
+    const myFilter1 = new DataFilter(options);
+    myFilter1.setUrl('./data.json');
+
+    const myFilter2 = new DataFilterWithId(options);
+    myFilter2.setUrl('./data-double-id.json');
+    //
+    // const myFilter = new DataFilterUpdatedRequest(options);
+    // myFilter.setUrl('http://localhost:3000/users');
+
+</script>
+</body>
+</html>
