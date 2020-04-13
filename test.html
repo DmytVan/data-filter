@@ -14,6 +14,15 @@
 </div>
 <script>
 
+    const options = {
+    parent: document.getElementsByClassName('parentNode')[0],
+    delay: 200,
+    cb: function (id) {
+        document.getElementById('showId').innerHTML = id;
+    },
+    startWithOnly: true,
+    countOfSymbol: 2
+    };
 
     const myFilter1 = new DataFilter(options);
     myFilter1.setUrl('./data.json');
