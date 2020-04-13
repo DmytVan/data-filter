@@ -230,7 +230,7 @@ DataFilter.prototype.setFocusItem = function (el, isUp) {
         }
         return;
     }
-    const firstListElem = document.getElementsByTagName('li')[0];
+    const firstListElem = this.listContainer.getElementsByTagName('li')[0];
     firstListElem && firstListElem.classList.add('filter-focus');
     this.focusedElement = firstListElem;
 };
@@ -414,13 +414,3 @@ DataFilterUpdatedRequest.prototype.downloadData = function (event, text) {
     xhr.send();
 };
 
-
-const options = {
-    parent: document.getElementsByClassName('parentNode')[0],
-    delay: 200,
-    cb: function (id) {
-        document.getElementById('showId').innerHTML = id;
-    },
-    startWithOnly: true,
-    countOfSymbol: 2
-};
